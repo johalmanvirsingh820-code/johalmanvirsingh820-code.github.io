@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Register | Cooking Workshop</title>
+    <meta
+      name="description"
+      content="Register for the cooking workshop. Submit your name, email, and preferences."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div>
+          <h1>Register</h1>
+          <p class="subtitle">Reserve your spot for the Cooking Workshop.</p>
+        </div>
+
+        <nav class="nav">
+          <a class="nav-link" href="index.html">Event</a>
+          <a class="nav-link active" href="form.html">Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Registration Form</h2>
+        <p class="note">
+          This form is for a practice website. It does not submit anywhere.
+        </p>
+
+        <form class="form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first">First Name</label>
+              <input type="text" id="first" name="first" required />
+            </div>
+
+            <div class="form-group">
+              <label for="last">Last Name</label>
+              <input type="text" id="last" name="last" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" />
+            </div>
+
+            <div class="form-group">
+              <label for="attendees">Number of Attendees</label>
+              <select id="attendees" name="attendees" required>
+                <option value="">Select</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="fieldset">
+            <legend>Workshop Preferences</legend>
+
+            <label class="radio">
+              <input type="radio" name="level" value="Beginner" required />
+              Beginner
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="level" value="Intermediate" />
+              Intermediate
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="level" value="Just Watching" />
+              Just watching
+            </label>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="notes">Allergies or Notes (optional)</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Example: nut allergy"></textarea>
+          </div>
+
+          <label class="checkbox">
+            <input type="checkbox" required />
+            I understand this is a practice registration form.
+          </label>
+
+          <div class="button-row">
+            <button class="btn" type="submit">Submit Registration</button>
+            <a class="btn btn-secondary" href="index.html">Back to Event</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p><strong>Contact:</strong> Cooking Workshop Team</p>
+        <p><strong>Address:</strong> 123 Tomato Street, Basil Heights, Calgary, AB T2X 1A1</p>
+        <p>© 2026 Cooking Workshop</p>
+      </div>
+    </footer>
+  </body>
+</html>
